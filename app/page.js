@@ -137,8 +137,22 @@ export default function Home() {
             display="flex"
             alignItems="center"
             justifyContent="space-between"
-            bgColor ="#f0f0f0"
+            bgcolor ="#f0f0f0"
             padding={5}
+            sx={{
+              '&::-webkit-scrollbar': {
+                width: '10px',
+              },
+              '&::-webkit-scrollbar-track': {
+                background: '#f1f1f1',
+              },
+              '&::-webkit-scrollbar-thumb': {
+                background: '#888',
+              },
+              '&::-webkit-scrollbar-thumb:hover': {
+                background: '#555',
+              },
+            }}
           >
             <Typography variant="h3" color="#333" textAlign="center">
               {name.charAt(0).toUpperCase() + name.slice(1)}
